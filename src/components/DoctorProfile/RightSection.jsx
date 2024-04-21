@@ -1,5 +1,11 @@
+import Box from "./Box";
+
 function RightSection() {
-  return <div>Right</div>;
+  return (
+    <section>
+      <Box />
+    </section>
+  );
 }
 
 export default RightSection;
