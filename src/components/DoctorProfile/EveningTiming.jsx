@@ -1,6 +1,13 @@
+import { useState } from "react";
 import Button from "../Button";
 
 function EveningTiming() {
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleButtonClick = (time) => {
+    setActiveButton(time);
+  };
+
   return (
     <div>
       <div>
@@ -8,19 +15,34 @@ function EveningTiming() {
           <h4 className="pl-4 text-lg font-bold">Evening</h4>
         </div>
         <div className="flex flex-wrap gap-3">
-          <button className="rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313]">
+          <button
+            onClick={() => handleButtonClick("04:00 PM")}
+            className={`rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313] duration-100 ease-in hover:bg-[#3A643B] hover:text-[#fff] ${activeButton === "04:00 PM" && "bg-[#3A643B] text-[#fff]"}`}
+          >
             04:00 PM
           </button>
-          <button className="rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313]">
+          <button
+            onClick={() => handleButtonClick("04:15 PM")}
+            className={`rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313] duration-100 ease-in hover:bg-[#3A643B] hover:text-[#fff] ${activeButton === "04:15 PM" && "bg-[#3A643B] text-[#fff]"}`}
+          >
             04:15 PM
           </button>
-          <button className="rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313]">
+          <button
+            onClick={() => handleButtonClick("04:30 PM")}
+            className={`rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313] duration-100 ease-in hover:bg-[#3A643B] hover:text-[#fff] ${activeButton === " 04:30 PM" && "bg-[#3A643B] text-[#fff]"}`}
+          >
             04:30 PM
           </button>
-          <button className="rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313]">
+          <button
+            onClick={() => handleButtonClick("04:45 PM")}
+            className={`rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313] duration-100 ease-in hover:bg-[#3A643B] hover:text-[#fff] ${activeButton === "04:45 PM" && "bg-[#3A643B] text-[#fff]"}`}
+          >
             04:45 PM
           </button>
-          <button className="rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313]">
+          <button
+            onClick={() => handleButtonClick("05:15 PM")}
+            className={`rounded-3xl border-[1px] border-[#EBEBEB] px-4 py-5 text-base font-normal text-[#131313] duration-100 ease-in hover:bg-[#3A643B] hover:text-[#fff] ${activeButton === "05:15 PM" && "bg-[#3A643B] text-[#fff]"}`}
+          >
             05:15 PM
           </button>
         </div>

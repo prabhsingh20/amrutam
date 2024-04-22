@@ -13,21 +13,27 @@ function Navbar() {
         <div className="flex gap-9">
           <NavLink
             to="/homepage"
-            className="ml-16 text-xl font-medium text-[#474747]"
+            className="ml-16 text-xl font-medium text-[#474747] hover:text-[#3A643B]"
           >
             Home
           </NavLink>
-          <NavLink to="/" className="text-xl font-bold text-[#3A643B]">
+          <NavLink
+            to="/"
+            className=" text-xl font-medium text-[#474747]  hover:text-[#3A643B]"
+          >
             Find Doctors
           </NavLink>
-          <NavLink to="/aboutus" className="text-xl font-medium text-[#474747]">
+          <NavLink
+            to="/aboutus"
+            className="text-xl font-medium text-[#474747]  hover:text-[#3A643B]"
+          >
             About us
           </NavLink>
         </div>
       </div>
       <div className="flex gap-4">
         <NavLink to="/login">
-          <Button className="border-[1px] border-[#3A643B] bg-navbar text-[#3A643B]">
+          <Button className="border-[1px] border-[#3A643B] bg-navbar text-[#3A643B] duration-100 ease-in hover:bg-[#3A643B] hover:text-[#fff]">
             Login
           </Button>
         </NavLink>

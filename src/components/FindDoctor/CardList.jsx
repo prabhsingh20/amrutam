@@ -64,7 +64,7 @@ function CardList({ card }) {
       </div>
       <Button
         onClick={() => navigate("doctorprofile")}
-        className="mt-8 w-full border-[1px] border-[#3A643B] bg-[#fff] text-base font-normal text-[#3A643B]"
+        className=" mt-8 w-full border-[1px] border-[#3A643B] bg-[#fff] text-base font-normal text-[#3A643B] duration-100 ease-in hover:bg-[#3A643B] hover:text-[#fff]"
       >
         View Profile
       </Button>
