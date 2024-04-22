@@ -4,7 +4,7 @@ function ProfileHeader() {
   return (
     <header className="px-14 py-10">
       <div className="">
-        <div className="h-[128px] overflow-hidden rounded-t-lg">
+        <div className="h-[128px] overflow-hidden rounded-t-xl">
           <img src="/img/bg2.png" alt="doctor image" className="w-full" />
         </div>
         <div className="relative flex h-[138px] w-full items-center justify-between border-[1px] border-[#D8D8D8] bg-[#FFFBF2] pl-52 pr-8">

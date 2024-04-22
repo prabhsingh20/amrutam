@@ -1,7 +1,7 @@
 function AboutMe() {
   return (
-    <div className=" h-[310px] rounded-lg border-[1px] border-[#DCDCDC]">
-      <header className="flex items-center justify-between  bg-gradient-to-l from-[#FBFCFB] to-[#F4F7EC] px-8 py-3">
+    <div className="overflow-hidden rounded-xl border-[1px] border-[#DCDCDC] pb-5">
+      <header className="flex items-center justify-between  bg-gradient-to-l from-[#FBFCFB] to-[#F4F7EC] px-8 py-3 ">
         <h2 className="text-2xl font-semibold text-[#313131]">
           A Little About Me
         </h2>

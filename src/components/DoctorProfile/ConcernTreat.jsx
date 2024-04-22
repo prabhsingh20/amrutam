@@ -1,6 +1,6 @@
 function ConcernTreat() {
   return (
-    <div className="rounded-lg border-[1px] border-[#DCDCDC]">
+    <div className="overflow-hidden rounded-2xl border-[1px] border-[#DCDCDC]">
       <header className="flex items-center justify-between  bg-gradient-to-l from-[#FBFCFB] to-[#F4F7EC] px-8 py-3">
         <h2 className="text-2xl font-semibold text-[#313131]">
           The Concerns I Treat

@@ -1,6 +1,6 @@
 function Experience() {
   return (
-    <div className="rounded-lg border-[1px] border-[#DCDCDC]">
+    <div className="overflow-hidden rounded-2xl border-[1px] border-[#DCDCDC]">
       <header className="flex items-center justify-between  bg-gradient-to-l from-[#FBFCFB] to-[#F4F7EC] px-8 py-3">
         <h2 className="text-2xl font-semibold text-[#313131]">
           My Work Experience
@@ -12,7 +12,7 @@ function Experience() {
         </h4>
         <div className="flex w-[450px]  justify-between pt-4">
           <div className="flex items-center justify-between gap-5">
-            <span className="material-symbols-outlined bg-[#F7F7FC] p-2">
+            <span className="material-symbols-outlined bg-[#F7F7FC] p-2 text-blue-900">
               home_work
             </span>
             <div className="grid gap-1">
@@ -28,7 +28,7 @@ function Experience() {
         </div>
         <div className="flex w-[450px]  justify-between pt-4">
           <div className="flex items-center justify-between gap-5">
-            <span className="material-symbols-outlined bg-[#F7F7FC] p-2">
+            <span className="material-symbols-outlined bg-[#F7F7FC] p-2 text-blue-900">
               home_work
             </span>
             <div className="grid gap-1">

@@ -25,7 +25,7 @@ function CardList({ card }) {
         <p className="absolute top-[150px] rounded-full bg-black px-2 py-1 text-sm font-normal text-white">
           4.5⭐
         </p>
-        <h3 className="mt-5 text-3xl  font-medium text-[#2E2F2E]">
+        <h3 className="mt-5 text-3xl font-medium text-[#2E2F2E]">
           {personName}
         </h3>
         <div className="mt-2 flex flex-col gap-2 px-8">
@@ -52,19 +52,19 @@ function CardList({ card }) {
           </div>
         </div>
         <div className="mt-3 flex gap-2">
-          <p className="rounded-xl  border-[1px] border-[#3a643b54] p-1 text-center text-sm leading-6">
+          <p className="rounded-xl  border-[1px] border-[#3A643B63] p-1 text-center text-sm leading-6">
             {video}
-            <span className="font-medium text-[#3A643B]">{videoPrice}</span>
+            <span className="font-bold text-[#3A643B]">{videoPrice}</span>
           </p>
           <p className="rounded-xl  border-[1px] border-[#3a643b54] p-1 text-center text-sm leading-6">
             {chat}
-            <span className="font-medium text-[#3A643B]">{chatPrice}</span>
+            <span className="font-bold text-[#3A643B]">{chatPrice}</span>
           </p>
         </div>
       </div>
       <Button
         onClick={() => navigate("doctorprofile")}
-        className="mt-6 w-full border-[1px] border-[#3A643B] bg-[#fff] text-base font-normal text-[#3A643B]"
+        className="mt-8 w-full border-[1px] border-[#3A643B] bg-[#fff] text-base font-normal text-[#3A643B]"
       >
         View Profile
       </Button>
